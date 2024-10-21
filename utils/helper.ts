@@ -14,9 +14,9 @@ export const formatPercentage = (percentage: number | null) =>
     percentage ? percentage.toFixed(2) : 'N/A';
 
 export const formatMarketCap = (marketCap: number) => {
-    if (marketCap > 1e12) return `$${(marketCap / 1e9).toFixed(2)}B`;
-    if (marketCap > 1e9) return `$${(marketCap / 1e6).toFixed(2)}M`;
-    return `$${(marketCap / 1e4).toFixed(2)}K`;
+    // if (marketCap > 1e9) return `$${(marketCap / 1e9).toFixed(2)}B`;
+    // if (marketCap > 1e6) return `$${(marketCap / 1e6).toFixed(2)}M`;
+    return `$${(marketCap / 1e3).toFixed(2)}K`;
 };
 
 export function decreasePowerByDecimals(
@@ -35,5 +35,5 @@ export function incresePowerByDecimals(
 
 export const shorten = (address: string | undefined) => {
     if (!address) return "";
-    // return `${address.substring(0, 6)}...${address.substring(address.length - 4, address.length)}`;
+    return `${address.substring(0, 4)}...${address.substring(address.length - 4, address.length)}`;
 };
