@@ -1,5 +1,5 @@
 const getBaseURL = (NODE_ENV: string | undefined) => {
-    return 'https://api.coingecko.com/api/api';
+    return process.env.API_URL;
 };
 
 export const BASE_URL = getBaseURL("dev");
