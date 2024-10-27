@@ -16,12 +16,27 @@ const DataProvider = ({ children }: any) => {
             const queryParams = new URLSearchParams({
                 [activeFilter]: "desc", // Apply the active filter dynamically
             });
-            const response = await fetch(`${BASE_URL}/${queryParams}`);
+            const response = await fetch(`${BASE_URL}/swap/token?${queryParams}`);
+            const backendData: ICoinDetails[] = await response.json();
 
-            setAllCoins(response); // Update Zustand state with merged data
+            const mergedData = backendData.map((coin) => {
+                const frontendCoin = memeCoinData.find((fcoin) => fcoin.id === coin.id);
+                if (frontendCoin && frontendCoin.detail_platforms.base) {
+                    return {
+                        ...coin,
+                        decimal_place: frontendCoin.detail_platforms.base.decimal_place,
+                        contract_address: frontendCoin.detail_platforms.base.contract_address,
+                    };
+                }
+                return coin;
+            });
+
+            setAllCoins(mergedData); // Update Zustand state with merged data
         } catch (error) {
             console.error("Error fetching coin data:", error);
             toast.error("Failed to fetch memecoin list");
+            toast.error("To run this project, Need to add coin api keys", {delay: 1000});
+            toast.error(".env values can't find", {delay: 3000});
         }
     }, [setAllCoins, activeFilter]);
 
