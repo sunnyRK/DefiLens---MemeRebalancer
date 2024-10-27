@@ -10,6 +10,15 @@ With our project on Base-India Devfolio Hackathon, we're tackling some key chall
 
 By building on Base, we're aiming to make memecoin investing on this chain easier, cheaper, and more user-friendly for everyone in our community.
 
+# To run this project we need below private API Keys,
+ - Paymaster keys, 
+ - Memecoin api key
+ - Coingecko api key
+ - Moralis api key 
+ - 1inch & paraswap api keys
+ - Dzap service private api keys.
+ - Coinbase CDP and WC api key
+
 ## Demo-Video
 
 https://www.loom.com/share/67694cd5698442f79a2e85eecdd87e85?sid=f46fead2-aedd-4704-b1e5-62eb5ccc17e5
