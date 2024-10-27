@@ -19,28 +19,31 @@ By building on Base, we're aiming to make memecoin investing on this chain easie
  - Dzap service private api keys.
  - Coinbase CDP and WC api key
 
-## Demo-Video
-
-https://www.loom.com/share/67694cd5698442f79a2e85eecdd87e85?sid=f46fead2-aedd-4704-b1e5-62eb5ccc17e5
-
-## Twitter
-
-Phase-1 Live: https://x.com/RadadiyaSunny/status/1846637330683384261
-Phase-2 Live: https://x.com/RadadiyaSunny/status/1843523560066646305
-
-## Web
-
-https://memes.defilens.tech 
-
-## Setup
+ ## Setup
 
 - Get Clone
 - Setup .env
 - npm i
 - npm run dev
 
+## Demo-Video
+
+https://www.loom.com/share/67694cd5698442f79a2e85eecdd87e85?sid=f46fead2-aedd-4704-b1e5-62eb5ccc17e5
+
+## Twitter
+
+### Phase-1 Live During Hackathon:  
+https://x.com/RadadiyaSunny/status/1846637330683384261  
+
+### Phase-2 Live During Hackathon:  
+https://x.com/RadadiyaSunny/status/1843523560066646305`
+
+## Try out, Collect Base memes here with no fess😎  
+
+https://memes.defilens.tech 
+
 ## How to Get in Touch?
 
-- rksunny
+- Telegram: rksunny
 - The DefiLens team is active and open to questions on our [Telegram community](https://t.me/defilenscommunity).
 
